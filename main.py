@@ -27,7 +27,6 @@ class CashOrderKRD(unittest.TestCase):
         self.driver.implicitly_wait(5)
         self.driver.find_element(By.LINK_TEXT, "Перейти в КОРЗИНУ").click()
         self.driver.implicitly_wait(2)
-        # self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         self.driver.find_element(By.XPATH, "/html/body/div[2]/div[3]/form/div[4]/button").click()
         self.driver.implicitly_wait(2)
         self.driver.find_element(By.ID, "order_name").click()
